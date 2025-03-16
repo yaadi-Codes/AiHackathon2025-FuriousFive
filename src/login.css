@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centered container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Login/Register box */
+.form-box {
+    background: white;
+    padding: 40px;
+    width: 320px; /* Slightly wider for better spacing */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+.form-box input {
+    width: 100%; /* Ensure full width within the container */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Fix width calculation */
+    font-size: 16px;
+}
+
+/* Button */
+.form-box button {
+    width: 100%; /* Ensure it matches the input fields */
+    padding: 12px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.form-box button:hover {
+    background-color: #005bb5;
+}
+
+
+/* Toggle link */
+#toggle-text {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+#toggle-link {
+    color: #0073e6;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#toggle-link:hover {
+    text-decoration: underline;
+}
