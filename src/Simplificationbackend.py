@@ -100,12 +100,20 @@ def extract_text_from_docx(docx_path):
     text = ""
     try:
         doc = docx.Document(docx_path)
+        # Extract paragraphs
         for para in doc.paragraphs:
             text += para.text + "\n"
+        # Extract tables
         for table in doc.tables:
             for row in table.rows:
                 for cell in row.cells:
                     text += cell.text + "\n"
+        # Extract headers & footers
+        for section in doc.sections:
+            if section.header:
+                text += section.header.paragraphs[0].text + "\n"
+            if section.footer:
+                text += section.footer.paragraphs[0].text + "\n"
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error reading Word document: {str(e)}")
     return text.strip() if text else "No readable text found."

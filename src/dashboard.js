@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const uploadArea = document.querySelector(".upload-area"); // Ensure this class exists in HTML
-    const uploadBtn = document.querySelector(".upload-btn"); // Ensure there's a button with class "upload-btn"
+    const uploadArea = document.querySelector(".upload-area");
+    const uploadBtn = document.querySelector(".upload-btn");
     const fileInput = document.createElement("input");
     fileInput.type = "file";
-    fileInput.accept = ".txt, .pdf, .ppt, .pptx, .doc, .docx"; // Accept text, PDF, PowerPoint, and Word files
+    fileInput.accept = ".txt, .pdf, .ppt, .pptx, .doc, .docx"; // Accept multiple formats
     fileInput.style.display = "none";
     document.body.appendChild(fileInput);
 
     uploadBtn.addEventListener("click", function () {
-        fileInput.click(); // Trigger file selection
+        fileInput.click();
     });
 
     fileInput.addEventListener("change", function (event) {
@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
             displayUploadedFile(file);
             processFile(file);
         }
-        
     });
 
     function displayUploadedFile(file) {
