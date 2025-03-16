@@ -1,0 +1,226 @@
+/* index.css */
+body {
+    margin: 0px 5%;
+    font-family: Arial, sans-serif;
+    background-color:azure;
+}
+
+.container_main {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7fefb; /* Light background */
+    padding:40px 20px;
+}
+
+/* Style for Logo */
+header h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a; /* Dark text */
+    text-decoration: none;
+}
+
+header h1, header h1 a {
+    text-decoration: none !important;
+    color: black;
+    display: inline-block;
+}
+
+/* Ensure the tagline does not inherit link styles */
+header h1::after {
+    content: " Making Learning Fun";
+    font-size: 14px;
+    font-weight: 400;
+    color: #6d6d6d;
+    text-decoration: none; /* Prevent inherited underline */
+}
+
+/* Navigation bar */
+#navBar {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the menu */
+    flex-grow: 1; /* Allows the menu to take available space */
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+/* Menu items */
+#navBar li {
+    display: inline;
+}
+
+#navBar a {
+    text-decoration: none; /* Remove underline */
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#navBar a:hover {
+    color: #0073e6; /* Subtle hover effect */
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Greeting Banner */
+.greeting-banner {
+    background: linear-gradient(to right, #4a90e2, #357ae8);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.greeting-content h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.greeting-content p {
+    margin: 5px 0;
+}
+
+.progress-btn {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tagline {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Learning Features */
+.learning-features {
+    margin-top: 30px;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.games {
+    background-image: url('game-icon.png'); /* Replace with actual icons */
+}
+
+.simplify {
+    background-image: url('book-icon.png');
+}
+
+.quiz {
+    background-image: url('quiz-icon.png');
+}
+
+/* Upload Resources */
+.resources {
+    margin-top: 40px;
+}
+
+.upload-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-area {
+    border: 2px dashed #ddd;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.upload-icon {
+    font-size: 40px;
+    display: block;
+}
+
+.upload-btn {
+    background-color: #0073e6;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+
+/* Responsive Navigation */
+@media screen and (max-width: 768px) {
+    #navBar {
+        display: none; /* Hide normal menu */
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8); 
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 40%;
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+    .feature-grid {
+        flex-direction: column;
+    }
+    #navBar.show {
+        display: flex; /* Show menu when toggled */
+    }
+    #navBar a {
+        color: rgb(255, 255, 255, 0.7);
+    }
+    
+
+    #navBar li {
+        display: block;
+        padding: 10px 0;
+       
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger icon */
+    }
+}
