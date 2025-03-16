@@ -24,18 +24,26 @@ Instructions:
 
 
 What was your motivation? Why did you build this project?
+Our motivation for creating this project stems from the challenges we've all encountered while studying, particularly when dealing with long lecture notes and PowerPoint presentations. Additionally, our school's platform lacks engaging and interactive ways to learn the material. To address this, we decided to create this website to make learning easier and more enjoyable.
 
 What problem does the project solve? Or, what it does?
+This project aims to transform student learning with an interactive platform offering three main features: a Document Summarizer that condenses lengthy materials into concise summaries, a Quiz Generator that creates custom quizzes from uploaded files for self-assessment, and Generative Games that turn study content into engaging AI-powered games for a more enjoyable learning experience.
 
 Why you used specific technologies? If your project has a lot of many features, list them here.
 
 Mention some of the challenges you faced and features you hope to implement in the future.
+Some challenges we faced are:
+We had to pay for each platform we wanted to use, so we resorted to a free platform that wasn't the most efficient. As a result, debugging took up a significant amount of our time. 
+We would like to implement additional games to make the platform more fun, allowing users to have more options.
 
-Mention anything that you think you are proud of building or having in that project
+Mention anything that you think you are proud of building or having in that project. 
+
 
 What did you learn in the process?
+We learned that teamwork and time management are important, and that AI tools are beneficial to work with.
 
 What’s next for the project?
+Our next step is to complete the project and implement improvements where needed. Afterward, we'll host it on our own server.
 
 Mention languages, frameworks, databases, etc.
 
