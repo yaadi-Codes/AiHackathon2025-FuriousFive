@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let isRegistering = false;
 
     const existingUsernames = ["admin", "testUser", "student123"]; // Simulated existing users
-    const HUNTER_API_KEY = "b17f26385b24ba19ec243fe15a84eb47319ba497"; // Replace with your Hunter.io API Key
+    const HUNTER_API_KEY = "API_key"; // Replace with your Hunter.io API Key
 
     function showError(input, message) {
         let errorDiv = input.nextElementSibling;
